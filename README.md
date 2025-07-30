@@ -23,9 +23,7 @@
   - `best_model.joblib`: Saved trained model for use in the app.
 
 
-### Tests
-- `tests/`: Unit and integration tests for pipeline modules.
-  - `test_preprocessing.py`: Tests for preprocessing functions.
+
 
 ---
 
