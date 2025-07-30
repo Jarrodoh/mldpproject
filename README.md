@@ -3,7 +3,7 @@
 ## Project Structure & File Descriptions
 
 - `app.py`: Main Streamlit app for earthquake magnitude prediction, interactive data insights, model results, and project overview.
-- `requirements.txt`: Lists all Python dependencies required to run the app and notebooks.
+- `requirements.txt`: Lists all Python dependencies required to run the app and notebooks. Please run pip install -r requirements.txt
 - `README.md`: Project documentation and file descriptions.
 - `test_imports.py`: Simple test script to check if all required modules can be imported.
 
