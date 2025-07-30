@@ -81,4 +81,4 @@ The Jupyter notebook (`notebooks/01_data_exploration.ipynb`) documents the full 
 ---
 
 ## Contact
-For questions or collaboration, contact the Temasek Y2 MLDP Team
+For questions or collaboration, contact me, jarrod :D
