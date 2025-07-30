@@ -105,7 +105,7 @@ def train_models(X_train, y_train, fast_mode=False):
         ))
     ])
     rf_params = {
-        'rf__n_estimators': [100, 200,],
+        'rf__n_estimators': [25, 50,],
         'rf__max_depth': [None, 10, 20],
         'rf__min_samples_split': [2, 5],
         'rf__min_samples_leaf': [1, 2]

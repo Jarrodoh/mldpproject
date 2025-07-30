@@ -1,7 +1,7 @@
 # app.py
 import streamlit as st
 import pandas as pd
-import joblib
+import cloudpickle
 import os
 import datetime
 import numpy as np
@@ -400,15 +400,16 @@ def create_temporal_patterns():
 @st.cache_resource
 def load_model():
     candidates = [
-        "best_model.joblib",
-        "notebooks/best_model.joblib", 
-        "./notebooks/best_model.joblib",
-        "outputs/model/best_model.joblib",
-        "model/best_model.joblib",
+        "best_model.pkl",
+        "notebooks/best_model.pkl", 
+        "./notebooks/best_model.pkl",
+        "outputs/model/best_model.pkl",
+        "model/best_model.pkl",
     ]
     for path in candidates:
         if os.path.exists(path):
-            return joblib.load(path)
+            with open(path, "rb") as f:
+                return cloudpickle.load(f)
     return None
 
 # 4) Sidebar Navigation
