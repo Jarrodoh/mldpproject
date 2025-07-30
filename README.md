@@ -17,7 +17,7 @@
   - `utils/`: Utility functions (may include helpers for logging, metrics, etc.).
   - `__pycache__/`: Python cache files (auto-generated).
 - `data/`: Raw and processed data files.
-  - `usgs_earthquake_data_2000_2025.csv`: Main dataset used for training and analysis from kaggle: https://www.kaggle.com/datasets/pulastya/global-seismic-events-20002025 .
+  - `usgs_earthquake_data_2000_2025.csv`: Main dataset used for training and analysis from kaggle: https://www.kaggle.com/datasets/pulastya/global-seismic-events-20002025 . Actually the dataset here is around 10-15k rows short of the actual dataset i got form kaggle because of file size limitations imposed by github, so uploading is impossible for mroe than 25mb, mine was 31mb so I compromised by reducign the data here, but everything else is triained on 170k rows (the real dataset from kaggle).
 - `notebooks/`: Jupyter notebooks for EDA and model development.
   - `01_data_exploration.ipynb`: Initial data exploration and visualization.
   - `best_model.joblib`: Saved trained model for use in the app.
